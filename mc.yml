@@ -1,0 +1,12 @@
+---
+- hosts: all
+  become: yes
+  tasks: 
+  - name: "ping it"
+    ping:
+
+  - name: "want to install apache2 server"
+    apt: 
+      name: apache2
+      status: present 
+
