@@ -2,11 +2,10 @@
 - hosts: all
   become: yes
   tasks: 
-  - name: "ping it"
-    ping:
+   - name: i want ping 
+     ping:
 
-  - name: "want to install apache2 server"
-    apt: 
+   - name: Need to install webserver on ubuntu node
+     apt:
       name: apache2
-      status: present 
-
+      state: present
